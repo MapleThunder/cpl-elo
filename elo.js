@@ -60,7 +60,6 @@ fs.createReadStream("./2019_match_data.csv")
   });
 
 function writeCsv() {
-  // TODO: Write new ratings to file
   const stringifier = stringify({ header: true, columns: CSV_COLUMNS });
   const writableStream = fs.createWriteStream(CSV_FILE_NAME);
 
